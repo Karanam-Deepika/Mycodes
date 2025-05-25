@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+        Scanner sc = new Scanner(System.in);
+        int x;
+        System.out.println("Enter the number to be find in array");
+        x= sc.nextInt();
+        System.out.println("Enter the array of elements");
+        for(int i=0; i< arr.length; i++)
+        {
+            arr[i] = sc.nextInt();
+        }
+        for(int i=0; i< arr.length; i++)
+        {
+            if(arr[i] == x)
+            {
+                System.out.println("Number found at index: " + i);
+                break;
+            }
+            
+        }
+
+    }
+}
